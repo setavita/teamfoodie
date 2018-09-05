@@ -12,22 +12,26 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/app_name"
-        tools:layout_editor_absoluteX="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="360dp"
-        tools:text="SCAN" />
+        tools:text="SCAN"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/scan_format"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textIsSelectable="true"
+        android:layout_below="@id/scan_button"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/scan_button" />
+        android:textIsSelectable="true" />
 
     <TextView
         android:id="@+id/scan_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press scan to start"
+        android:text="start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
